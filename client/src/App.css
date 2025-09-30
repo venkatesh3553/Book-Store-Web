@@ -1,0 +1,58 @@
+.noufound-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  text-align: center;
+  padding: 20px;
+}
+
+.notfount-head {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #ff4d4d;
+  margin-bottom: 20px;
+  animation: bounce 1.5s infinite;
+}
+
+.notfound-img {
+  width: 320px;
+  max-width: 100%;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.notfound-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  background: #007bff;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.notfound-btn:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+  color: white;
+  text-decoration: none;
+}
+
+/* Bounce animation for heading */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  } 
+  40% {
+    transform: translateY(-15px);
+  } 
+  60% {
+    transform: translateY(-8px);
+  }
+}

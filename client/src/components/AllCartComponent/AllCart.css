@@ -1,0 +1,151 @@
+
+/* Cart List Item */
+.cart-li {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cart-li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Book Image */
+.cart-book-image {
+    width: 120px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+/* Book Details Container */
+.cart-book-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+/* Book Title */
+.cart-book-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+/* Book Subtitle */
+.cart-book-subtitle {
+    font-size: 0.95rem;
+    color: #666;
+    margin: 0 0 10px 0;
+}
+
+/* Book Price */
+.cart-book-price {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+/* Remove Button */
+.remove-cart-btn {
+    align-self: flex-start;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #e53935;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.remove-cart-btn:hover {
+    background-color: #c62828;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .cart-li {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart-book-image {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .cart-book-details {
+        align-items: center;
+        text-align: center;
+    }
+
+    .remove-cart-btn {
+        width: 100%;
+    }
+}
+
+/* Quantity Controls */
+.cart-count-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.count-btn-minus{
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #fbbc04;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-right: 10px;
+}
+.count-btn-plus{
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #34a853;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-left: 10px;
+}
+.count-number{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0 10px;
+}
+.count-btn-minus:hover {
+    background-color: #f9ab00;
+}
+.count-btn-plus:hover {
+    background-color: #2c8c47;
+}
+
+.cart-totla-book-price{
+    font-size: 22px;
+    color: green;
+    font-weight: bold;
+}
+.book-total-span{
+    color: black;
+}
